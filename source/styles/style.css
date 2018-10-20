@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400|Raleway:400,500,600,700,800");
+a {
+  text-decoration: none; }
+
+body {
+  margin: 0;
+  width: 100%; }
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "header" "main" "footer"; }
+
+header {
+  background: url("../img/slide.png") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 2fr 10fr 1fr; }
+  header nav {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 4fr 8fr;
+    align-items: center;
+    padding: 0 10%; }
+    header nav .logo a {
+      float: left; }
+    header nav .logo span {
+      float: left;
+      font-family: Raleway, sans-serif;
+      color: #ffffff;
+      font-size: 34px;
+      font-weight: 400;
+      line-height: 60px;
+      margin-left: 10px; }
+    header nav .menu {
+      justify-self: end;
+      padding: 0; }
+      header nav .menu li {
+        display: inline-block;
+        margin: 0 10px; }
+      header nav .menu li:nth-child(9) {
+        margin-left: 40px; }
+      header nav .menu a {
+        display: block;
+        color: #fff;
+        font-family: Montserrat, sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center; }
+      header nav .menu a:hover {
+        color: #c7b29a; }
+      header nav .menu .icon-cart {
+        background: url("../img/icon-cart.png") no-repeat;
+        width: 18px;
+        height: 24px; }
+      header nav .menu .icon-search {
+        background: url("../img/icon-search.png") no-repeat;
+        width: 24px;
+        height: 24px; }
+  header .header-content {
+    display: grid;
+    font-family: Raleway, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    grid-auto-flow: column;
+    align-items: center; }
+    header .header-content .header-content-center h2 {
+      font-size: 36px;
+      font-weight: 500;
+      margin: 0 0 10px; }
+    header .header-content .header-content-center h1 {
+      font-size: 52px;
+      font-weight: 700;
+      margin: 0 0 20px; }
+    header .header-content .header-content-center span {
+      font-family: Montserrat, sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 24px;
+      width: 568px;
+      height: 52px;
+      display: block;
+      margin: 0 auto; }
+    header .header-content .header-content-center button {
+      border-radius: 3px;
+      background-color: #998675;
+      color: #ffffff;
+      width: 170px;
+      height: 53px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 23px;
+      margin: 30px 0 40px 0; }
+      header .header-content .header-content-center button:hover {
+        cursor: pointer; }
+  header .header-points {
+    align-self: center;
+    justify-self: center; }
+    header .header-points .header-points-list {
+      padding: 0; }
+      header .header-points .header-points-list li {
+        display: inline-block; }
+      header .header-points .header-points-list .point-active {
+        display: block;
+        background: url("../img/point-active.png");
+        width: 15px;
+        height: 15px; }
+      header .header-points .header-points-list .point-unactive {
+        display: block;
+        background: url("../img/point-unactive.png");
+        width: 11px;
+        height: 11px; }
+
+main {
+  width: 100%; }
+
+footer {
+  width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
