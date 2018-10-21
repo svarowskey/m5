@@ -2,6 +2,9 @@
 a {
   text-decoration: none; }
 
+button:hover {
+  cursor: pointer; }
+
 body {
   margin: 0;
   width: 100%; }
@@ -93,8 +96,6 @@ header {
       font-weight: 700;
       line-height: 23px;
       margin: 30px 0 40px 0; }
-      header .header-content .header-content-center button:hover {
-        cursor: pointer; }
   header .header-points {
     align-self: center;
     justify-self: center; }
@@ -157,7 +158,90 @@ main {
         margin: 25px auto 0; }
   main .real-ideas {
     height: 70vh;
-    background: #fbfaf8; }
+    background: #fbfaf8;
+    display: grid;
+    grid-template-rows: 4fr 1fr; }
+    main .real-ideas .real-ideas-main {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: 2fr 8fr 2fr; }
+    main .real-ideas .real-ideas-content {
+      grid-column-start: 2;
+      display: grid;
+      grid-template-rows: 2fr 5fr; }
+      main .real-ideas .real-ideas-content .real-ideas-block-text {
+        align-self: center; }
+        main .real-ideas .real-ideas-content .real-ideas-block-text h1 {
+          font-family: Raleway, sans-serif;
+          color: #555555;
+          font-size: 30px;
+          font-weight: 600;
+          text-align: center; }
+        main .real-ideas .real-ideas-content .real-ideas-block-text p {
+          font-family: Montserrat, sans-serif;
+          color: #8c8c8c;
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 28px;
+          text-align: center;
+          margin: 0 210px; }
+      main .real-ideas .real-ideas-content .real-ideas-block-browser {
+        position: relative; }
+        main .real-ideas .real-ideas-content .real-ideas-block-browser img {
+          position: absolute; }
+        main .real-ideas .real-ideas-content .real-ideas-block-browser .browser-left {
+          position: absolute;
+          left: calc(30% - 385px);
+          bottom: 0; }
+        main .real-ideas .real-ideas-content .real-ideas-block-browser .browser-center {
+          z-index: 10;
+          left: calc(50% - 385px);
+          bottom: 0; }
+        main .real-ideas .real-ideas-content .real-ideas-block-browser .browser-right {
+          right: calc(30% - 358px);
+          bottom: 0; }
+    main .real-ideas .real-ideas-bottom {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: 2fr 8fr 2fr;
+      background: -webkit-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+      background: -moz-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+      background: -o-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+      background: -ms-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+      background: linear-gradient(90deg, #211b19 0%, #4e3427 100%); }
+      main .real-ideas .real-ideas-bottom .real-ideas-bottom-grid {
+        grid-column-start: 2;
+        position: relative; }
+      main .real-ideas .real-ideas-bottom .real-ideas-bottom-text {
+        float: left;
+        position: relative;
+        top: calc(50% - 60px); }
+        main .real-ideas .real-ideas-bottom .real-ideas-bottom-text h1 {
+          font-family: Raleway, sans-serif;
+          color: #ffffff;
+          font-size: 28px;
+          font-weight: 400; }
+          main .real-ideas .real-ideas-bottom .real-ideas-bottom-text h1 mark {
+            color: #c7b299;
+            background: none; }
+        main .real-ideas .real-ideas-bottom .real-ideas-bottom-text p {
+          font-family: Montserrat, sans-serif;
+          color: #615855;
+          font-size: 18px;
+          font-weight: 300; }
+      main .real-ideas .real-ideas-bottom .real-ideas-bottom-button {
+        border-radius: 3px;
+        background-color: #998675;
+        width: 170px;
+        height: 50px;
+        font-family: Raleway, sans-serif;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        float: right;
+        position: relative;
+        top: calc(50% - 25px); }
 
 footer {
   width: 100%; }
