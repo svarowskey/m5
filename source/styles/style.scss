@@ -347,6 +347,135 @@ main {
 
   }
 
+  .last-products {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: 2fr 8fr 2fr;
+
+    .last-products-top {
+      grid-column-start: 2;
+      align-self: center;
+
+      h1 {
+        font-family: Raleway, sans-serif;
+        color:  #555555;
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+      }
+
+      p {
+        font-family: Montserrat, sans-serif;
+        color:  #8c8c8c;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 28px;
+        text-align: center;
+        margin: 0 28%;
+      }
+    }
+
+    .last-products-main {
+      grid-column-start: 2;
+      display: grid;
+      grid-template-rows: 2fr 16fr;
+
+      .last-product-nav {
+
+        .browser-nav {
+
+          li {
+            display: inline-block;
+
+            &:hover {
+              a {
+                color:  #ffffff;
+                border-radius: 3px;
+                background-color:  #998675;
+              }
+            }
+          }
+
+          a{
+            font-family: Montserrat, sans-serif;
+            color:  #8c8c8c;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 21px;
+            padding: 10px;
+            outline: 1px solid black;
+            border-radius: 3px;
+            display: block;
+          }
+        }
+      }
+
+      .last-product-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 470px 470px;
+        grid-gap: 30px;
+
+        .grid-block {
+          display: grid;
+          grid-template-rows: 3fr 2fr;
+
+          img {
+            width: 100%;
+          }
+
+          .grid-block-text {
+            background-color:  #fbfaf8;
+
+            h2 {
+              font-family: Raleway, sans-serif;
+              color: #c7b29a;
+              font-size: 20px;
+              margin-left: 10%;
+              font-weight: 500;
+            }
+
+            p {
+              font-family: Montserrat, sans-serif;
+              color: #d1d1d1;
+              font-size: 14px;
+              font-weight: 300;
+              line-height: 20px;
+              margin-left: 10%;
+            }
+          }
+
+          &:hover {
+            img {
+              filter: brightness(50%);
+            }
+            .grid-block-text {
+              background-color:  #362f2d;
+            }
+          }
+        }
+      }
+    }
+
+    .last-products-bottom {
+      grid-column-start: 2;
+      align-self: center;
+      justify-self: center;
+
+      .last-products-button {
+        border-radius: 3px;
+        background-color:  #998675;
+        width: 170px;
+        height: 50px;
+        font-family: Raleway, sans-serif;
+        color:  #ffffff;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+      }
+    }
+  }
 }
 
 footer {
