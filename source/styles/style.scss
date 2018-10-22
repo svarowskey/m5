@@ -452,10 +452,12 @@ main {
           img {
             width: 270px;
             height: auto;
+            transition: 500ms;
           }
 
           .grid-block-text {
             background-color:  #fbfaf8;
+            transition: 500ms;
 
             h2 {
               font-family: Raleway, sans-serif;

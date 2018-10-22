@@ -318,9 +318,11 @@ main {
           position: relative; }
           main .last-products .last-products-main .last-product-grid .grid-block img {
             width: 270px;
-            height: auto; }
+            height: auto;
+            transition: 500ms; }
           main .last-products .last-products-main .last-product-grid .grid-block .grid-block-text {
-            background-color: #fbfaf8; }
+            background-color: #fbfaf8;
+            transition: 500ms; }
             main .last-products .last-products-main .last-product-grid .grid-block .grid-block-text h2 {
               font-family: Raleway, sans-serif;
               color: #c7b29a;
