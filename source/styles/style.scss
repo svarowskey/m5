@@ -192,10 +192,19 @@ main {
 
         svg {
           fill: #555555;
+          transition: 500ms;
+        }
+
+        h2 {
+          transition: 500ms;
         }
 
         & > div {
           display: block;
+        }
+
+        .underlining {
+          transition: 500ms;
         }
 
         &:hover {

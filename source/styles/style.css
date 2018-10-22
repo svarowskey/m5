@@ -137,9 +137,14 @@ main {
         text-align: center;
         margin-bottom: calc(50% - 70px); }
         main .opportunities .opportunities-content div svg {
-          fill: #555555; }
+          fill: #555555;
+          transition: 500ms; }
+        main .opportunities .opportunities-content div h2 {
+          transition: 500ms; }
         main .opportunities .opportunities-content div > div {
           display: block; }
+        main .opportunities .opportunities-content div .underlining {
+          transition: 500ms; }
         main .opportunities .opportunities-content div:hover {
           cursor: default; }
           main .opportunities .opportunities-content div:hover svg {
