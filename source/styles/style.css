@@ -715,6 +715,12 @@ main {
       main .about .about-content .about-block2-content {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr; }
+        main .about .about-content .about-block2-content .recent-post:hover {
+          cursor: default; }
+          main .about .about-content .about-block2-content .recent-post:hover h4 {
+            color: #ffffff; }
+          main .about .about-content .about-block2-content .recent-post:hover p {
+            color: #c7b299; }
       main .about .about-content .about-block3-content {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr; }
@@ -753,6 +759,8 @@ footer {
       font-weight: 300;
       line-height: 20px;
       text-align: left; }
+    footer .footer-content a:hover {
+      color: #c7b299; }
     footer .footer-content mark {
       color: #959595;
       background: none; }
