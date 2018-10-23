@@ -710,7 +710,8 @@ main {
         color: #545454;
         font-size: 14px;
         font-weight: 300;
-        line-height: 20px; }
+        line-height: 20px;
+        transition: 300ms; }
       main .about .about-content .about-block1 p {
         margin: 30px 0;
         width: 265px; }
